@@ -1,0 +1,47 @@
+{
+    "name": "Awesome TS",
+
+    "secret": "app-jwt-secret",
+    "credentialsRequired": false,
+
+    "serverEngine": "express",
+    "framework": {
+        "name": "awts",
+        "version": "x"
+    },
+
+    "http": {
+        "port": 9000
+    },
+    "https": {
+        "port": 443,
+        "key": "",
+        "ca": "",
+        "cert": ""
+    },
+
+    "db": "mongo",
+    "dbOptions": {
+        "url": "mongodb://localhost/test",
+        "prefix": "",
+        "options": {
+            "debug": false
+        },
+        "dbOption": {},
+        "dbs": []
+    },
+
+    "url": {
+        "modules": "/get_modules",
+        "allModules": "/get_all_modules",
+        "framework": "/app_framework_info"
+    },
+
+    "disabledModules": [],
+    "modulePaths": ["modules"],
+
+    "packageJson": "package.json",
+    "moduleNameInPackageJson": "module",
+    "moduleAppFileNameInPackageJson": "moduleAppFile",
+    "moduleDependenciesInPackageJson": "moduleDependencies"
+}

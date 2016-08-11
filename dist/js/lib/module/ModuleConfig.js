@@ -1,0 +1,14 @@
+"use strict";
+var ModuleConfig = (function () {
+    function ModuleConfig() {
+    }
+    ModuleConfig.DEFAULT_APP_FILE_NAME = "app.js";
+    ModuleConfig.DEFAULT_DB_NAME = "default";
+    ModuleConfig.DB_MODEL_READY_EVENT = "DatabaseModelReady";
+    ModuleConfig.DB_MODELS_READY_EVENT = "DatabaseModelsReady";
+    return ModuleConfig;
+}());
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default = ModuleConfig;
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImxpYi9tb2R1bGUvTW9kdWxlQ29uZmlnLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFDQTtJQUFBO0lBS0EsQ0FBQztJQUpVLGtDQUFxQixHQUFXLFFBQVEsQ0FBQztJQUN6Qyw0QkFBZSxHQUFXLFNBQVMsQ0FBQztJQUNwQyxpQ0FBb0IsR0FBVyxvQkFBb0IsQ0FBQztJQUNwRCxrQ0FBcUIsR0FBVyxxQkFBcUIsQ0FBQztJQUNqRSxtQkFBQztBQUFELENBTEEsQUFLQyxJQUFBO0FBTEQ7OEJBS0MsQ0FBQSIsImZpbGUiOiJsaWIvbW9kdWxlL01vZHVsZUNvbmZpZy5qcyIsInNvdXJjZXNDb250ZW50IjpbIlxuZXhwb3J0IGRlZmF1bHQgY2xhc3MgTW9kdWxlQ29uZmlnIHtcbiAgICBzdGF0aWMgREVGQVVMVF9BUFBfRklMRV9OQU1FOiBzdHJpbmcgPSBcImFwcC5qc1wiO1xuICAgIHN0YXRpYyBERUZBVUxUX0RCX05BTUU6IHN0cmluZyA9IFwiZGVmYXVsdFwiO1xuICAgIHN0YXRpYyBEQl9NT0RFTF9SRUFEWV9FVkVOVDogc3RyaW5nID0gXCJEYXRhYmFzZU1vZGVsUmVhZHlcIjtcbiAgICBzdGF0aWMgREJfTU9ERUxTX1JFQURZX0VWRU5UOiBzdHJpbmcgPSBcIkRhdGFiYXNlTW9kZWxzUmVhZHlcIjtcbn1cbiJdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ==

@@ -1,0 +1,48 @@
+{
+  "name": "awts",
+  "version": "1.0.0",
+  "description": "Awesome start to a Node TypeScript project.",
+  "main": "src/app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "gulp test",
+    "play": "gulp; cd dist/js/; node check.js",
+    "debug": "gulp; cd dist/js/; node --debug-brk check.js"
+  },
+  "author": "Harsh Raval",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "gulp": "3.9.1",
+    "gulp-mocha": "3.0.0",
+    "gulp-sequence": "0.4.5",
+    "gulp-sourcemaps": "1.6.0",
+    "gulp-tsd": "0.1.1",
+    "gulp-tslint": "6.0.2",
+    "gulp-typescript": "2.13.6",
+    "mocha": "3.0.2",
+    "sinon": "1.17.5",
+    "supertest": "2.0.0",
+    "tslint": "3.14.0"
+  },
+  "dependencies": {
+    "bluebird": "3.4.1",
+    "cookie-parser": "1.4.3",
+    "dependable": "0.2.5",
+    "dependable-list": "0.1.1",
+    "errorhandler": "1.4.3",
+    "eventemitter2": "2.0.1",
+    "express": "4.14.0",
+    "express-jwt": "3.4.0",
+    "express-validator": "2.20.8",
+    "jshint": "2.9.2",
+    "lazy-dependable": "0.2.0",
+    "lodash": "4.14.0",
+    "method-override": "2.3.6",
+    "mongoose": "4.5.8",
+    "passport": "0.3.2",
+    "passport-local": "1.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+"use strict";
+function statics(clazz, method, descriptor) {
+    clazz["$$statics"] = clazz["$$statics"] || [];
+    clazz["$$statics"].push({
+        name: method,
+        func: clazz[method]
+    });
+}
+exports.statics = statics;
+
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvZGF0YWJhc2UvbW9uZ28vZGVjb3JhdG9ycy9zdGF0aWNzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7QUFBQSxpQkFBeUIsS0FBSyxFQUFFLE1BQWMsRUFBRSxVQUE4QjtJQUMxRSxLQUFLLENBQUMsV0FBVyxDQUFDLEdBQUcsS0FBSyxDQUFDLFdBQVcsQ0FBQyxJQUFJLEVBQUUsQ0FBQztJQUM5QyxLQUFLLENBQUMsV0FBVyxDQUFDLENBQUMsSUFBSSxDQUFDO1FBQ3BCLElBQUksRUFBRSxNQUFNO1FBQ1osSUFBSSxFQUFFLEtBQUssQ0FBQyxNQUFNLENBQUM7S0FDdEIsQ0FBQyxDQUFDO0FBQ1AsQ0FBQztBQU5lLGVBQU8sVUFNdEIsQ0FBQSIsImZpbGUiOiJjb21wb25lbnRzL2RhdGFiYXNlL21vbmdvL2RlY29yYXRvcnMvc3RhdGljcy5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBmdW5jdGlvbiBzdGF0aWNzIChjbGF6eiwgbWV0aG9kOiBzdHJpbmcsIGRlc2NyaXB0b3I6IFByb3BlcnR5RGVzY3JpcHRvcikge1xuICAgIGNsYXp6W1wiJCRzdGF0aWNzXCJdID0gY2xhenpbXCIkJHN0YXRpY3NcIl0gfHwgW107XG4gICAgY2xhenpbXCIkJHN0YXRpY3NcIl0ucHVzaCh7XG4gICAgICAgIG5hbWU6IG1ldGhvZCxcbiAgICAgICAgZnVuYzogY2xhenpbbWV0aG9kXVxuICAgIH0pO1xufVxuIl0sInNvdXJjZVJvb3QiOiIvc291cmNlLyJ9

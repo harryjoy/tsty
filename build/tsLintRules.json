@@ -1,0 +1,23 @@
+{
+    "indent": "spaces",
+    "interface-name": "always-prefix",
+    "no-duplicate-variable": true,
+    "no-duplicate-key": true,
+    "no-invalid-this": false,
+    "no-trailing-whitespace": true,
+    "no-unreachable": true,
+    "no-unused-expression": false,
+    "no-unused-variable": false,
+    "no-var-keyword": false,
+    "no-var-requires": false,
+    "quotemark": "double",
+    "radix": false,
+    "semicolon": "always",
+    "variable-name": {
+        "check-format": {
+            "allow-leading-underscore": true,
+            "allow-trailing-underscore": true,
+            "allow-pascal-case": true
+        }
+    }
+}

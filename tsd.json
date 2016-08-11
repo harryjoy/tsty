@@ -1,0 +1,84 @@
+{
+  "version": "v4",
+  "repo": "borisyankov/DefinitelyTyped",
+  "ref": "master",
+  "path": "typings",
+  "bundle": "typings/tsd.d.ts",
+  "installed": {
+    "bluebird/bluebird.d.ts": {
+      "commit": "07378f4a20ef709de8aea9507144fcf48c38897d"
+    },
+    "serve-static/serve-static.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
+    },
+    "express/express.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
+    },
+    "express-serve-static-core/express-serve-static-core.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
+    },
+    "node/node.d.ts": {
+      "commit": "df11fe36a12b5e24fc607c6923a21f6bddbb5357"
+    },
+    "mime/mime.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
+    },
+    "lodash/lodash.d.ts": {
+      "commit": "07378f4a20ef709de8aea9507144fcf48c38897d"
+    },
+    "eventemitter2/eventemitter2.d.ts": {
+      "commit": "5979f9f7472d3ab58abd10059aea91531708b75c"
+    },
+    "passport/passport.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
+    },
+    "express-jwt/express-jwt.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
+    },
+    "express-unless/express-unless.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
+    },
+    "cookie-parser/cookie-parser.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
+    },
+    "method-override/method-override.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
+    },
+    "express-validator/express-validator.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
+    },
+    "errorhandler/errorhandler.d.ts": {
+      "commit": "2a24bbb7ca4f13e52c7f6a0ab6144b565bf1ef55"
+    },
+    "mongoose/mongoose.d.ts": {
+      "commit": "3af0c338b96d067e6f82e170c0be7553a0b58043"
+    },
+    "mpromise/mpromise.d.ts": {
+      "commit": "3af0c338b96d067e6f82e170c0be7553a0b58043"
+    },
+    "mongodb/mongodb.d.ts": {
+      "commit": "3af0c338b96d067e6f82e170c0be7553a0b58043"
+    },
+    "mongoose-promise/mongoose-promise.d.ts": {
+      "commit": "3af0c338b96d067e6f82e170c0be7553a0b58043"
+    },
+    "mocha/mocha.d.ts": {
+      "commit": "df11fe36a12b5e24fc607c6923a21f6bddbb5357"
+    },
+    "chai/chai.d.ts": {
+      "commit": "df11fe36a12b5e24fc607c6923a21f6bddbb5357"
+    },
+    "assertion-error/assertion-error.d.ts": {
+      "commit": "df11fe36a12b5e24fc607c6923a21f6bddbb5357"
+    },
+    "superagent/superagent.d.ts": {
+      "commit": "df11fe36a12b5e24fc607c6923a21f6bddbb5357"
+    },
+    "supertest/supertest.d.ts": {
+      "commit": "df11fe36a12b5e24fc607c6923a21f6bddbb5357"
+    },
+    "sinon/sinon.d.ts": {
+      "commit": "df11fe36a12b5e24fc607c6923a21f6bddbb5357"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "noImplicitAny": false,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "listFiles": true,
+        "experimentalDecorators": true,
+        "target": "ES5"
+    },
+    "exclude": [
+        "dist",
+        "node_modules"
+    ]
+}
