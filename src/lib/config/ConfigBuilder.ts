@@ -1,4 +1,6 @@
 import * as _ from "lodash";
+import * as path from "path";
+import * as fs from "fs";
 import * as Promise from "bluebird";
 import AppConfig from "./AppConfig";
 import { IConfigBuilder } from "./IConfigBuilder";
@@ -7,9 +9,12 @@ export default class ConfigBuilder {
     private builders: Array<IConfigBuilder>;
     private config: AppConfig;
 
-    constructor() {
+    constructor(configFilePath?: string) {
         this.builders = [];
-        this.config = new AppConfig();
+        if (!configFilePath && fs.existsSync("config.json")) {
+            configFilePath = path.join(process.cwd(), "config.json");
+        }
+        this.config = new AppConfig(configFilePath);
     }
 
     addConfigOption(key: string, value: any): ConfigBuilder {

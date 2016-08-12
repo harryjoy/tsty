@@ -1,17 +1,32 @@
 {
-  "name": "awts",
+  "name": "tsty",
   "version": "1.0.0",
-  "description": "Awesome start to a Node TypeScript project.",
-  "main": "src/app.js",
-  "directories": {
-    "test": "test"
+  "description": "Configurable and modular Node backend framework built in TypeScript.",
+  "main": "dist/js/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harryjoy/tsty.git"
   },
+  "keywords": [
+    "tsty",
+    "tasty",
+    "typescipt tsty",
+    "typescipt tasty",
+    "tasty typescipt",
+    "typescipt"
+  ],
   "scripts": {
-    "test": "gulp test",
-    "play": "gulp; cd dist/js/; node check.js",
-    "debug": "gulp; cd dist/js/; node --debug-brk check.js"
+    "test": "gulp test"
   },
-  "author": "Harsh Raval",
+  "author": {
+    "name": "Harsh Raval",
+    "email": "harshraval9@gmail.com",
+    "url": "https://github.com/harryjoy/tsty"
+  },
+  "bugs": {
+    "url": "https://github.com/harryjoy/tsty/issues"
+  },
+  "homepage": "https://github.com/harryjoy/tsty#readme",
   "license": "MIT",
   "devDependencies": {
     "chai": "3.5.0",

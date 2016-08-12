@@ -91,7 +91,7 @@ export default class MongoDatabase extends AppDatabase<mongoose.Connection, Mong
     }
 
     getConnectionReadyState(): number {
-        return this.connection.readyState;
+        return this.connection ? this.connection.readyState : -1;
     }
 
     private onDefaultConnectionOpen(defer: Promise.Resolver<{}>, result: IConnectionResolver) {
@@ -137,10 +137,13 @@ export default class MongoDatabase extends AppDatabase<mongoose.Connection, Mong
 
     private createDbModel(alias: string, name: string, schema: mongoose.Schema, colllection: string): mongoose.Model<any> {
         let model: mongoose.Model<any>;
-        if (colllection) {
-            model = this.getMongoConnectionByAlias(alias).model<any>(name, schema, colllection);
-        } else {
-            model = this.getMongoConnectionByAlias(alias).model<any>(name, schema);
+        let connection = this.getMongoConnectionByAlias(alias);
+        if (connection) {
+            if (colllection) {
+                model = connection.model<any>(name, schema, colllection);
+            } else {
+                model = connection.model<any>(name, schema);
+            }
         }
         return model;
     }

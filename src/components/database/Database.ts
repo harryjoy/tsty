@@ -27,7 +27,7 @@ export abstract class AppDatabase<T, U extends IDbModel, Z> {
     };
 
     reset() {
-        this.disconnect();
+        if (this.connection) { this.disconnect(); }
         this.connection = null;
         this.models = {};
     }
@@ -41,8 +41,10 @@ export abstract class AppDatabase<T, U extends IDbModel, Z> {
     abstract registerModel(modelData: U): Array<Z>;
 
     registerModelPostSteps(key: string, model: Z) {
-        Promise.promisifyAll(model);
-        Promise.promisifyAll(model["prototype"]);
+        if (model) {
+            Promise.promisifyAll(model);
+            Promise.promisifyAll(model["prototype"]);
+        }
         this.models[key] = model;
     }
 

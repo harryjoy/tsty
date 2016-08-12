@@ -6,9 +6,13 @@ export default class AppConfig implements IConfig {
     framework: IFramework;
     additionalConfigs: Types.Map;
 
-    constructor() {
+    constructor(configFilePath?: string) {
         const configJson = require("../config.json");
         _.merge(this, configJson);
+        if (configFilePath) {
+            const customConfig = require(configFilePath);
+            _.merge(this, customConfig);
+        }
 
         const packageJson = require("../../../package.json");
         this.framework = {

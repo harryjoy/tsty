@@ -22,7 +22,7 @@
 
     "db": "mongo",
     "dbOptions": {
-        "url": "mongodb://localhost/test",
+        "url": "mongodb://localhost/tsty",
         "prefix": "",
         "options": {
             "debug": false
