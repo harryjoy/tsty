@@ -1,6 +1,6 @@
 {
   "name": "tsty",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Configurable and modular Node backend framework built in TypeScript.",
   "main": "dist/js/index.js",
   "repository": {
