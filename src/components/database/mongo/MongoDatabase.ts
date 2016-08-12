@@ -5,7 +5,6 @@ import * as Types from "../../types/Types";
 import Logger from "../../logs/Logger";
 import Constants from "../Constants";
 import ModuleConfig from "../../../lib/module/ModuleConfig";
-import ModuleNames from "../../../lib/config/ModuleNames";
 import { MongoModel } from "./MongoModel";
 import { AppDatabase } from "../Database";
 import { application } from "../../../index";
@@ -97,7 +96,6 @@ export default class MongoDatabase extends AppDatabase<mongoose.Connection, Mong
 
     private onDefaultConnectionOpen(defer: Promise.Resolver<{}>, result: IConnectionResolver) {
         this.connection = result.connection;
-        application.register(ModuleNames.DATABASE_MODULE, this);
 
         let config = application.config;
         let promises = [];

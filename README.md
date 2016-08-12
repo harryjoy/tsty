@@ -43,7 +43,7 @@ Almost all items in stack are configurable and replacable. Wiki pages for specif
 - **[Francis Wertz](https://github.com/fwertz)** -- [mongoose-decorator](https://github.com/fwertz/mongoose-decorator)
   - Used mongoose-decorator code to build custom decorators for DB Modules for default MongoDB.
 
-## Some Libraries
+## Key Libraries
 - Express
 - Mongoose
 - Bluebird

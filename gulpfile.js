@@ -6,6 +6,7 @@ require("./build/config");
 require("./build/compile");
 require("./build/copy");
 require("./build/test");
+require("./build/clean");
 
-gulp.task("default", ["copy", "lint", "build"]);
-gulp.task("test", gulpSequence(["copy", "lint", "build"], "test:js"));
+gulp.task("default", gulpSequence("clean", ["copy", "lint", "build"]));
+gulp.task("test", gulpSequence("default", "test:js"));

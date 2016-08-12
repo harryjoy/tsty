@@ -27,6 +27,7 @@ export abstract class AppDatabase<T, U extends IDbModel, Z> {
     };
 
     reset() {
+        this.disconnect();
         this.connection = null;
         this.models = {};
     }
