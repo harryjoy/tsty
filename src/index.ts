@@ -6,14 +6,14 @@
 
 // classes
 import AwtsEvents from "./components/events/Events";
-import AwtsLogger from "./components/logs/Logger";
+import AwtsLogger from "./components/logs/StaticLogger";
 import AwtsModule from "./lib/module/Module";
 import ExpressServer from "./lib/server/ExpressServer";
 import { AppDatabase } from "./components/database/Database";
 import MongoDatabase from "./components/database/mongo/MongoDatabase";
 export var Module = AwtsModule;
 export var Events = AwtsEvents;
-export var Logger = AwtsLogger;
+export var StaticLogger = AwtsLogger;
 export var Database = AppDatabase;
 export var Server = ExpressServer;
 export var MongoDB = MongoDatabase;

@@ -1,4 +1,4 @@
-export function method (clazz, method, descriptor) {
+export function method (clazz, method: string, descriptor: PropertyDescriptor) {
     (clazz["$$methods"] = clazz["$$methods"] || []).push({
         name: method,
         func: clazz[method]

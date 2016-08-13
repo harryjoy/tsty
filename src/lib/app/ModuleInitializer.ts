@@ -1,7 +1,7 @@
 import * as Promise from "bluebird";
 import * as express from "express";
 import * as Types from "../../components/types/Types";
-import Logger from "../../components/logs/Logger";
+import StaticLogger from "../../components/logs/StaticLogger";
 import ModuleNames from "../config/ModuleNames";
 import DependantModule from "../module/DependantModule";
 import ModulesLoader from "../module/ModulesLoader";
@@ -40,7 +40,7 @@ export default class ModuleInitializer implements IAppInitializer {
         return Promise.all(promises)
         .then(this.allModulesLoaded.bind(this, app, defer))
         .catch((error) => {
-            Logger.error("Error while loading modules: " + error);
+            StaticLogger.error("Error while loading modules: " + error);
             defer.resolve(false);
         });
     }

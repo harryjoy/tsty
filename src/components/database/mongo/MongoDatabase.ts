@@ -2,7 +2,7 @@ import * as mongoose from "mongoose";
 import * as Promise from "bluebird";
 import * as _ from "lodash";
 import * as Types from "../../types/Types";
-import Logger from "../../logs/Logger";
+import StaticLogger from "../../logs/StaticLogger";
 import Constants from "../Constants";
 import ModuleConfig from "../../../lib/module/ModuleConfig";
 import { MongoModel } from "./MongoModel";
@@ -42,7 +42,7 @@ export default class MongoDatabase extends AppDatabase<mongoose.Connection, Mong
     disconnect(): Promise<{}> {
         const defer = Promise.defer();
         if (!this.isConnected()) {
-            Logger.info("No connection is opened to close.");
+            StaticLogger.info("No connection is opened to close.");
             return;
         }
         this.connection.close();

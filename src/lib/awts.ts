@@ -4,7 +4,7 @@ import * as express from "express";
 import * as Promise from "bluebird";
 import * as LazyDependable from "lazy-dependable";
 import * as Types from "../components/types/Types";
-import Logger from "../components/logs/Logger";
+import StaticLogger from "../components/logs/StaticLogger";
 import AppInitializer from "../components/intializer/ApplicationInitializer";
 import AppConfig from "./config/AppConfig";
 import ConfigBuilder from "./config/ConfigBuilder";
@@ -67,9 +67,9 @@ export default class Application {
 
     executeInitializers(): Promise<void> {
         return this.initializer.initialize(this).then((result) => {
-            Logger.info("Application initialization complete");
+            StaticLogger.info("Application initialization complete");
         }).catch((err) => {
-            Logger.error("err", err);
+            StaticLogger.error("err", err);
         });
     }
 

@@ -1,5 +1,4 @@
 import * as Types from "../../components/types/Types";
-import Logger from "../../components/logs/Logger";
 import MongoDatabase from "../../components/database/mongo/MongoDatabase";
 import ModuleNames from "../../lib/config/ModuleNames";
 import { AppDatabase } from "../../components/database/Database";

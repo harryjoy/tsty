@@ -10,8 +10,8 @@ export default class AppInitializer {
         this.initializers.push(handler);
     }
 
-    initialize<T>(app: Application): Promise<any> {
-        const deferred: Types.Resolver = Promise.defer();
+    initialize<T>(app: Application): Promise<T> {
+        const deferred: Promise.Resolver<T> = Promise.defer<T>();
         let promises = this.initializers.map((h) => { return h.initialize(app); });
         Promise.all(promises).then((...result) => {
             deferred.resolve(result[0]);

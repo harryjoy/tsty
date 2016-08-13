@@ -1,6 +1,6 @@
 import * as Promise from "bluebird";
 import * as Types from "../../components/types/Types";
-import Logger from "../../components/logs/Logger";
+import StaticLogger from "../../components/logs/StaticLogger";
 import DbFactory from "../../components/database/DbFactory";
 import ModuleNames from "../config/ModuleNames";
 import ServerEngineFactory from "../server/ServerEngineFactory";
@@ -9,7 +9,7 @@ class Handler {
     startServer(application: Types.Application, options: any, cb?: Function) {
         if (application.active) {
             cb(application);
-            Logger.info("Application server is already up.");
+            StaticLogger.info("Application server is already up.");
             return;
         }
         application.buildConfiguration().then(() => {
@@ -17,7 +17,7 @@ class Handler {
             application.options = options;
             this.connectToDbAndStartApp(application, cb);
         }).catch((err) => {
-            Logger.error(err);
+            StaticLogger.error(err);
             throw err;
         });
     }

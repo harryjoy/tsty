@@ -3,7 +3,7 @@ import * as Helpers from "../../components/utils/Helpers";
 import Events from "../../components/events/Events";
 import DependantModule from "./DependantModule";
 import ModuleConfig from "./ModuleConfig";
-import Logger from "../../components/logs/Logger";
+import StaticLogger from "../../components/logs/StaticLogger";
 import { AppDatabase } from "../../components/database/Database";
 import { IDbModel } from "../../components/database/IDbModel";
 import { IConfig } from "../config/IConfig";
@@ -46,7 +46,7 @@ export default class Module {
     buildDbModels(database: AppDatabase<any, IDbModel, any>, override?: boolean) {
         for (let model of this.models) {
             if (database.isModelExistInModels(model.name) && !override) {
-                Logger.info("Model already exists, skipping it: " + model.name)
+                StaticLogger.info("Model already exists, skipping it: " + model.name)
                 continue;
             }
             database.updateModelStructure(model);

@@ -4,7 +4,7 @@ import * as Promise from "bluebird";
 import * as Types from "../../components/types/Types";
 import ModuleList from "./ModuleList";
 import DependantModule from "./DependantModule";
-import Logger from "../../components/logs/Logger";
+import StaticLogger from "../../components/logs/StaticLogger";
 
 export default class ModulesLoader {
     constructor(private packageJson: string, private moduleNameInPackageJson: string,
@@ -35,7 +35,7 @@ export default class ModulesLoader {
             });
         } else {
             if (error && error.code !== "ENOENT") {
-                Logger.error(error);
+                StaticLogger.error(error);
                 return deferred.reject(error);
             }
             return deferred.resolve();
@@ -58,7 +58,7 @@ export default class ModulesLoader {
                 return deferred.resolve();
             }
         } catch (err) {
-            Logger.error(err);
+            StaticLogger.error(err);
             return deferred.reject(err);
         }
         return deferred.resolve();
