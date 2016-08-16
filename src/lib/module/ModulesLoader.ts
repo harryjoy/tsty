@@ -54,8 +54,6 @@ export default class ModulesLoader {
                     dependantModule.cloneDependencies(dependencies);
                 }
                 list.add(dependantModule);
-            } else {
-                return deferred.resolve();
             }
         } catch (err) {
             StaticLogger.error(err);

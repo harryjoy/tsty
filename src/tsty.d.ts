@@ -66,17 +66,6 @@ declare module "tsty" {
                 statics?: any;
             }
 
-            interface IConnectionResolver {
-                uri: string;
-                connection: mongoose.Connection;
-                alias?: string;
-            }
-
-            interface IConnectionPoolEntity {
-                state: string;
-                value: IConnectionResolver
-            }
-
             interface MongoDecorators {
                 /**
                  * Add new method to schema.
@@ -187,46 +176,46 @@ declare module "tsty" {
                 getModel(key: string): Z;
 
                 /**
-                 * Connect to mongo database.
+                 * Connect to database.
                  * @return {Promise}
                  */
                 abstract connect(): Promise<{}>;
 
                 /**
-                 * Disconnect all open connections to mongo database.
+                 * Disconnect all open connections to database.
                  * @return {Promise}
                  */
                 abstract disconnect(): Promise<{}>;
 
                 /**
-                 * Returns true if mongo db connection is open.
+                 * Returns true if db connection is open.
                  * @return {boolean}
                  */
                 abstract isConnected(): boolean;
 
                 /** 
-                 * Add any listener to mongo database with callback function.
+                 * Add any listener to database with callback function.
                  * @param {string}   name Name of listener.
                  * @param {Function} cb   Callback function to be called when event is fired.
                  */
                 abstract listen(name: string, cb: Function): void | any;
 
                 /** 
-                 * Add missing fields to mongo model and make it proper for processing.
+                 * Add missing fields to database model and make it proper for processing.
                  * @param {MongoModel} model
                  */
                 abstract updateModelStructure(model: MongoModel);
 
                 /** 
-                 * Bind listeners to mongo model.
+                 * Bind listeners to database model.
                  * @param {MongoModel}       modelData
                  * @param {Array<TListener>} listeners
                  */
                 abstract bindModelListeners(modelData: MongoModel, listeners: Array<TListener>);
 
                 /**
-                 * Register new mongo model; creates new mongoose model and adds to array.
-                 * It creates mongoose model for all open connections.
+                 * Register new database model; creates new database model and adds to an array.
+                 * It creates database model for all open connections.
                  * @param  {MongoModel} modelData
                  * @return {Array}               
                  */

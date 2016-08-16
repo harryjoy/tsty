@@ -40,13 +40,13 @@ When `serve` method is called, it does following operations:
 - Start server engine. (by default ExpressJS)
 - Run all registered application initializers.
 
-For more details about creating Modules and confiuration of  application, please check Wiki.
+For more details about creating Modules and confiuration of  application, please check [Wiki](https://github.com/harryjoy/tsty/wiki).
 
-### Configurable / replacable
-Almost all items in stack are configurable and replacable. Wiki pages for specific items:
-- HTTP Framework
-- Database
-- Logger
+### Configurable / replaceable
+Almost all items in stack are configurable and replaceable. Wiki pages for specific items:
+- [HTTP Framework](https://github.com/harryjoy/tsty/wiki/API-%5C-HTTP-engine)
+- [Database](https://github.com/harryjoy/tsty/wiki/Database-engine)
+- [Configuration](https://github.com/harryjoy/tsty/wiki/Configuration)
 
 ### Influencers
 - [MEAN.io](http://mean.io/)
@@ -57,7 +57,7 @@ Almost all items in stack are configurable and replacable. Wiki pages for specif
   - Used mongoose-decorator code to build custom decorators for DB Modules for default MongoDB.
 
 ### Next steps
-Integrate Messaging Queues and make it work like micor-services and able to deploy modules separately and on different spaces.
+Integrate Messaging Queues and make it work like micro-services and able to deploy modules separately and on different spaces.
 
 ------
 

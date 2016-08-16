@@ -1,5 +1,5 @@
 {
-    "name": "Awesome TS",
+    "name": "Tsty",
 
     "secret": "app-jwt-secret",
     "credentialsRequired": false,
