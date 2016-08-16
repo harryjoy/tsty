@@ -5,6 +5,7 @@ Configurable and modular Node backend framework built in TypeScript.
 You should read "tsty" as "Tasty". (You know, Just for FUN!)
 
 ### Purpose
+To create a backend framework that is easy to configure and parts of it are also easy to replace or modify.
 
 ### Installation
 ```
@@ -49,27 +50,29 @@ Almost all items in stack are configurable and replacable. Wiki pages for specif
 - **[Francis Wertz](https://github.com/fwertz)** -- [mongoose-decorator](https://github.com/fwertz/mongoose-decorator)
   - Used mongoose-decorator code to build custom decorators for DB Modules for default MongoDB.
 
-### Key Libraries
-- Express
-- Mongoose
-- Bluebird
-- Dependable
-- Dependale List
-- Lazy Dependable
-- Lodash
-- Mocha & Chai
-- Gulp
-
 ### Next steps
 Integrate Messaging Queues and make it work like micor-services and able to deploy modules separately and on different spaces.
 
-### Development
+------
+
+## Development
 You will need following dependencies installed on your machine before starting to contribute on this project:
 - [NodeJS](https://nodejs.org/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [Gulp](http://gulpjs.com/)
 - [Typings](https://github.com/typings/typings)
 - [Mongo DB](https://www.mongodb.com/)
+
+### Key Libraries
+- [Express](https://expressjs.com/)
+- [Mongoose](http://mongoosejs.com/)
+- [Bluebird](http://bluebirdjs.com/docs/getting-started.html)
+- [Dependable](https://www.npmjs.com/package/dependable)
+- [Dependale List](https://github.com/andrija-hers/dependable-list)
+- [Lazy Dependable](https://www.npmjs.com/package/lazy-dependable)
+- [Lodash](https://lodash.com/)
+- [Mocha](https://mochajs.org/) & [Chai](http://chaijs.com/)
+- [SuperTest](https://github.com/visionmedia/supertest)
 
 ### Building project
 For building project Gulp is used. Run following command to build this project:
