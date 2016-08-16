@@ -493,7 +493,7 @@ declare module "tsty" {
                  * Accepts options and a callback that will be called when application start up is completed.
                  * 1. Build application configuration by going through all config builders.
                  * 2. Connect to database.
-                 * 3. Start server engine
+                 * 3. Start server engine.
                  * 4. Run all application initializers.
                  * @type {TServeFunc}
                  */

@@ -33,8 +33,14 @@ App.application.serve({}, () => {
     console.log("Application Started");
 });
 ```
+When `serve` method is called, it does following operations:
+- Check if application is already running, if yes then return otherwise move forward.
+- Build application configuration by going through all registered config builders.
+- Connect to database. (by default MongoDB)
+- Start server engine. (by default ExpressJS)
+- Run all registered application initializers.
 
-For more details about creating Modules and making an application, please check Wiki.
+For more details about creating Modules and confiuration of  application, please check Wiki.
 
 ### Configurable / replacable
 Almost all items in stack are configurable and replacable. Wiki pages for specific items:
