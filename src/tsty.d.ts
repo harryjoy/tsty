@@ -17,14 +17,6 @@ declare module "tsty" {
     import * as DependableList from "dependable-list";
 
     namespace tsty {
-        type TMap = { [key: string]: number } | { [key: string]: string } | { [key: string]: any };
-        type TListener = (name: string, cb: Function) => void;
-        type TResolver = Promise.Resolver<{}>;
-        type TStringFuncObject = string | Function | Object
-        type TDecorator = (clazz, method: string, descriptor: PropertyDescriptor) => void;
-        type TServeFunc = (options: any, cb?: (application: application.Application) => void) => void;
-        type TAppDatabase = database.AppDatabase<any, any, any>;
-
         interface TstyStatic {
             configBuilder: configuration.ConfigBuilder;
             initializer: application.AppInitializer;
@@ -565,6 +557,14 @@ declare module "tsty" {
                 serve: TServeFunc;
             }
         }
+
+        type TMap = { [key: string]: number | string | any };
+        type TListener = (name: string, cb: Function) => void;
+        type TResolver = Promise.Resolver<{}>;
+        type TStringFuncObject = string | Function | Object
+        type TDecorator = (clazz, method: string, descriptor: PropertyDescriptor) => void;
+        type TServeFunc = (options: any, cb?: (application: application.Application) => void) => void;
+        type TAppDatabase = database.AppDatabase<any, any, any>;
 
         namespace configuration {
             interface IFramework {
