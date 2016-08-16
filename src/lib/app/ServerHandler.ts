@@ -34,8 +34,7 @@ class Handler {
     }
 
     private startEngine(application: Types.Application, cb: Function, database: Types.AppDatabase) {
-        const config = application.config;
-        const serverEngine = ServerEngineFactory.produceServerEngine(config.serverEngine || "express");
+        const serverEngine = ServerEngineFactory.produceServerEngine(application.config.serverEngine || "express");
         serverEngine.start(application, database);
         application.executeInitializers().then(() => {
             serverEngine.afterStartup(() => {
