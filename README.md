@@ -47,6 +47,7 @@ Almost all items in stack are configurable and replaceable. Wiki pages for speci
 - [HTTP Framework](https://github.com/harryjoy/tsty/wiki/API-%5C-HTTP-engine)
 - [Database](https://github.com/harryjoy/tsty/wiki/Database-engine)
 - [Configuration](https://github.com/harryjoy/tsty/wiki/Configuration)
+- [Application initializers](https://github.com/harryjoy/tsty/wiki/Application-Initializer)
 
 ### Influencers
 - [MEAN.io](http://mean.io/)

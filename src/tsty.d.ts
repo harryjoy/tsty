@@ -68,7 +68,7 @@ declare module "tsty" {
 
             interface MongoDecorators {
                 /**
-                 * Add new method to schema.
+                 * Adds new method to schema.
                  * @type {TDecorator}
                  */
                 method: TDecorator;
@@ -86,19 +86,19 @@ declare module "tsty" {
                 static: TDecorator;
 
                 /**
-                 * Define new mongoose model
+                 * Defines new mongoose model
                  * @param {any} clazz Class/Function definition of model.
                  */
                 model(clazz?);
 
                 /**
-                 * Add new pre listener to scehma.
+                 * Adds new pre listener to scehma.
                  * @param {[any]} ...args Name and callback for listener with any other options required.
                  */
                 pre(...args): void;
 
                 /**
-                 * Add new pre listener to scehma.
+                 * Adds new post listener to scehma.
                  * @param {[any]} ...args Name and callback for listener with any other options required.
                  */
                 post(...args): void;
@@ -461,7 +461,7 @@ declare module "tsty" {
                 addInitializer(handler: IAppInitializer): void;
 
                 /**
-                 * Walk through all application initializers and call their initialize method
+                 * Walks through all application initializers and call their initialize method
                  *     with application as optional argument.
                  */
                 initialize(app: Application): Promise<any>;

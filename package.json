@@ -16,7 +16,8 @@
     "typescipt"
   ],
   "scripts": {
-    "test": "gulp test"
+    "test": "gulp test",
+    "typedoc": "gulp; typedoc --mode modules --module commonjs --target ES5 --includeDeclarations --out docs/ src/tsty.d.ts"
   },
   "author": {
     "name": "Harsh Raval",
@@ -41,7 +42,8 @@
     "mocha": "3.0.2",
     "sinon": "1.17.5",
     "supertest": "2.0.0",
-    "tslint": "3.14.0"
+    "tslint": "3.14.0",
+    "typedoc": "0.4.5"
   },
   "dependencies": {
     "bluebird": "3.4.1",
